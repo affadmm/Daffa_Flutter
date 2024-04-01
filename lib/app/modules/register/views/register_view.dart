@@ -72,7 +72,7 @@ class RegisterPage extends StatelessWidget {
                       controller: controller.usernameController,
                       style: TextStyle(color: Colors.black),
                       decoration: InputDecoration(
-                        labelText: 'Username',
+                        labelText: 'Email',
                         labelStyle: TextStyle(
                           color: Color.fromRGBO(45, 109, 154, 1),
                         ),

@@ -3,6 +3,10 @@ import 'package:flutter_application_2/app/routes/app_pages.dart';
 import 'package:get/get.dart';
 import 'package:flutter_application_2/app/modules/home/controllers/home_controller.dart';
 import 'package:carousel_slider/carousel_slider.dart'; // Import carousel_slider package
+import 'package:flutter_application_2/app/modules/register/controllers/register_controller.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+
 
 class Home extends StatelessWidget {
   final HomeController controller = Get.put(HomeController());
@@ -35,7 +39,7 @@ class Home extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'Hello, Daffa!',
+                          'Hello ,',
                           style: TextStyle(
                             color: Color.fromRGBO(45, 109, 154, 1),
                             fontSize: 20,
@@ -322,7 +326,7 @@ class Home extends StatelessWidget {
                   borderRadius: BorderRadius.circular(10),
                 ),
                 child: Icon(
-                  Icons.access_alarm_rounded,
+                  Icons.timer_rounded,
                   size: 30,
                   color: Color.fromRGBO(45, 109, 154, 1),
                 ),
